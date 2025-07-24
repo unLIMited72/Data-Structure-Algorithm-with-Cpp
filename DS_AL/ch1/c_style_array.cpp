@@ -2,7 +2,7 @@
 
 int main()
 {
-    int scores[5] = {50, 60, 70, 80, 90};
+    int scores[5] = {50, 60, 70, 80, 100};
 
     // int size_array = sizeof(scores) / sizeof(scores[0]);
     int size_array = std::size(scores);

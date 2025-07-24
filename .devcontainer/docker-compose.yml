@@ -1,0 +1,13 @@
+# .devcontainer/docker-compose.yml
+
+version: '3.8'
+
+services:
+  cpp-container:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    container_name: cpp_devcontainer
+    volumes:
+      - ..:/workspace:cached
+    tty: true

@@ -22,12 +22,12 @@ public:
         end_ = new Node {0, nullptr, nullptr};
         begin_->next_ = end_;
         end_->prev_ = begin_;
-    };
+    }
     ~LinkedList2() {
         while ( !empty() )
             pop_back();
         delete begin_, end_;
-    };
+    }
 
     bool empty() {
         return begin_->next_ == end_ && end_->prev_ == begin_;

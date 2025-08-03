@@ -11,8 +11,8 @@ class LinkedList
 private:
     Node* head;
 public:
-    LinkedList() : head(nullptr) {};
-    ~LinkedList() { while( !empty() ){ pop_front(); }; };
+    LinkedList() : head(nullptr) {}
+    ~LinkedList() { while( !empty() ){ pop_front(); }; }
     void push_front(int val);
     void pop_front();
     void print_all();
